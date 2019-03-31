@@ -31,7 +31,7 @@ public class RepeatRule implements TestRule {
     @Retention(RetentionPolicy.RUNTIME)
     @Target(ElementType.METHOD)
     public @interface Repeat {
-        public abstract int times();
+        int times();
     }
 
     @Override
